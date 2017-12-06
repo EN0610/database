@@ -14,7 +14,8 @@ CREATE TABLE nf_users
     profilepic VARCHAR(200) NOT NULL, 
     company VARCHAR(100), 
     jobtitle VARCHAR(100), 
-    businessarea VARCHAR(100), 
+    businessarea VARCHAR(100),
+    /*   NERD ONLY   */ 
     experience INT(2), 
     hourlyrate DECIMAL(5,2), 
     nerdcv VARCHAR(200), 
