@@ -5,8 +5,10 @@ CREATE TABLE nf_users
 ( 
     userid INT(10) NOT NULL AUTO_INCREMENT, 
     usertypeid INT(10) NOT NULL, 
-    fullname  VARCHAR(100) NOT NULL, 
+    firstname  VARCHAR(100) NOT NULL, 
+    lastname  VARCHAR(100) NOT NULL, 
     email VARCHAR(200) NOT NULL, 
+    username VARCHAR(200) NOT NULL,
     dob DATE NOT NULL, 
     userpassword VARCHAR(100) NOT NULL, 
     passwordhint VARCHAR(200) NOT NULL, 
@@ -23,7 +25,8 @@ CREATE TABLE nf_users
     portfolioimg2 VARCHAR(200), 
     portfolioimg3 VARCHAR(200), 
     PRIMARY KEY (userid), 
-    CHECK (dob>=18)
+    CHECK (dob>=18),
+    UNIQUE (username)
 ) Engine = InnoDB;
 
 CREATE TABLE nf_usertypes 
@@ -54,7 +57,7 @@ CREATE TABLE nf_projects
 ( 
     projectid INT(10) NOT NULL AUTO_INCREMENT, 
     clientid INT(10) NOT NULL, 
-    nerdid INT(10) NOT NULL, 
+    nerdid INT(10), 
     specialismid INT(10) NOT NULL, 
     projectname VARCHAR(200) NOT NULL, 
     projectdescription VARCHAR(500) NOT NULL, 
@@ -117,6 +120,7 @@ CREATE TABLE nf_comments
     userid INT(10) NOT NULL, 
     commentcontent VARCHAR(500) NOT NULL, 
     posted DATETIME NOT NULL,
+    approved TINYINT(1) NOT NULL,
     PRIMARY KEY (commentid)
 ) Engine = InnoDB;
 

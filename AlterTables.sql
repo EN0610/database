@@ -1,7 +1,8 @@
 /*    USER TABLES    */
 
 ALTER TABLE nf_users 
-ADD FOREIGN KEY (usertypeid) REFERENCES nf_usertypes(usertypeid);
+ADD FOREIGN KEY (usertypeid) REFERENCES nf_usertypes(usertypeid),
+ADD UNIQUE (username);
 
 ALTER TABLE nf_userspecialisms
 ADD FOREIGN KEY (userid) REFERENCES nf_users(userid),
