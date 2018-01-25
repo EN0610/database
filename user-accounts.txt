@@ -1,0 +1,18 @@
+------------------------------------------------------------
+Username        |   Password         |  User Type          |
+------------------------------------------------------------
+dsimpson        |   Nospmis1         |  Admin              |
+cjavris         |   Sivraj1          |  Admin              |
+
+janderson       |   Redvelvet1       |  Client             |
+dmichaels       |   Bewiser1         |  Client             |
+pbrown          |   Clean4lyf        |  Client             |
+amccarthy       |   Wincase5         |  Client             |
+
+pdacantus       |   code15life       |  Nerd               |
+teaton          |   Codem4ster       |  Nerd               |
+bgiroux         |   Devt1ngs         |  Nerd               |
+hbuork          |   Sk8rboy          |  Nerd               |
+pholden         |   Edsheer4n        |  Nerd               |
+amurphy         |   Bubble5          |  Nerd               |
+------------------------------------------------------------

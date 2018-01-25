@@ -46,7 +46,7 @@ VALUES
 
 /* PROJECTS WITH NERDS */
 
-INSERT INTO nf_projects (projectid, clientid, nerdid, specialismid, projectname, projectdescription, budget, deadline, approved, inspirationimg1, inspirationimg2, inspirationimg3)
+INSERT INTO nf_projects (projectid, clientid, nerdid, specialismid, projectname, projectdescription, budget, posted, deadline, approved, finished, inspirationimg1, inspirationimg2, inspirationimg3)
 VALUES
   /*
     PROJECT: PWIZER MOBILE APP
@@ -56,7 +56,7 @@ VALUES
   */
   (1, 4, 8, 2, 'Pwizer Sales Tracking Mobile App',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '2000.00', '2018-04-29', 1, 'pwizer-app/pwizer-1.png', 'pwizer-app/pwizer-2.png', 'pwizer-app/pwizer-3.png'),
+      '2000.00', '2017-12-30', '2018-04-29', 1, 0, 'pwizer-app/pwizer-1.png', 'pwizer-app/pwizer-2.png', 'pwizer-app/pwizer-3.png'),
   /*
     PROJECT: SUPER SOAPS WEBSITE
     CLIENT: PAUL BROWN
@@ -65,7 +65,7 @@ VALUES
   */
   (2, 5, 7, 1, 'Super Soaps Website',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '450.00', '2018-03-10', 0, 'soaps-website/super-soaps-1.png', 'soaps-website/super-soaps-1.jpg',
+      '450.00', '2017-12-30', '2018-03-10', 1, 0, 'soaps-website/super-soaps-1.png', 'soaps-website/super-soaps-1.jpg',
    'soaps-website/super-soaps-3.png'),
   /*
     PROJECT: CUPCAKE LOVE LOYALTY MOBILE APP
@@ -75,12 +75,12 @@ VALUES
   */
   (3, 5, 12, 2, 'Cupcake Love Loyalty Points Mobile App',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '1000.00', '2018-06-05', 0, 'cupcake-app/cupcake-love-1.png', 'cupcake-app/cupcake-love-2.png',
+      '1000.00', '2017-12-30', '2018-06-05', 1, 0, 'cupcake-app/cupcake-love-1.png', 'cupcake-app/cupcake-love-2.png',
    'cupcake-app/cupcake-love-3.png');
 
 /* PROJECTS AWAITING NERDS */
 
-INSERT INTO nf_projects (projectid, clientid, specialismid, projectname, projectdescription, budget, deadline, approved, inspirationimg1, inspirationimg2, inspirationimg3)
+INSERT INTO nf_projects (projectid, clientid, specialismid, projectname, projectdescription, budget, posted, deadline, approved, finished, inspirationimg1, inspirationimg2, inspirationimg3)
 VALUES
   /*
     PROJECT: PEARSON SPECTRE WEBSITE
@@ -88,7 +88,7 @@ VALUES
   */
   (4, 6, 1, 'Pearson Spectre Website',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '4000.00', '2018-04-01', 0, 'law-website/pearson-spectre-1.png', 'law-website/pearson-spectre-2.png',
+      '4000.00', '2017-12-31', '2018-04-01', 0, 0, 'law-website/pearson-spectre-1.png', 'law-website/pearson-spectre-2.png',
       'law-website/pearson-spectre-3.png'),
   /*
     PROJECT: PEARSON SPECTRE ACCOUNTING SOFTWARE
@@ -96,7 +96,7 @@ VALUES
   */
   (5, 6, 4, 'Pearson Spectre Accounting Software',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '7500.00', '2018-04-01', 0, 'law-software/pearson-spectre-1.png', 'law-software/pearson-spectre-2.png',
+      '7500.00', '2018-01-03', '2018-04-01', 0, 0, 'law-software/pearson-spectre-1.png', 'law-software/pearson-spectre-2.png',
       'law-software/pearson-spectre-3.png'),
   /*
     PROJECT: CUPCAKE LOVE PAYMENT TABLET APP
@@ -104,7 +104,7 @@ VALUES
   */
   (6, 5, 3, 'Cupcake Love Easy Pay iPad App',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '800.00', '2018-06-15', 0, 'cupcake-software/cupcake-love-1.png', 'cupcake-software/cupcake-love-2.png',
+      '800.00', '2018-01-07', '2018-06-15', 0, 0, 'cupcake-software/cupcake-love-1.png', 'cupcake-software/cupcake-love-2.png',
       'cupcake-software/cupcake-love-3.png'),
   /*
     PROJECT: PWIZER SHIPMENT TRACKER MOBILE APP
@@ -112,14 +112,14 @@ VALUES
   */
   (7, 4, 2, 'Pwizer Shipment Tracker Mobile App',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '3000.00', '2018-03-01', 0, 'pwizer-app/pwizer-1.png', 'pwizer-app/pwizer-2.png', 'pwizer-app/pwizer-3.png'),
+      '3000.00', '2018-01-11', '2018-03-01', 0, 0, 'pwizer-app/pwizer-1.png', 'pwizer-app/pwizer-2.png', 'pwizer-app/pwizer-3.png'),
   /*
     PROJECT: SUPER SOAPS PRODUCTION SOFTWARE
     CLIENT: PAUL BROWN
   */
   (8, 5, 4, 'Super Soaps Production Software',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '1250.00', '2018-05-10', 0, 'soaps-software/super-soaps-1.png', 'soaps-software/super-soaps-2.png',
+      '1250.00', '2018-01-18', '2018-05-10', 0, 0, 'soaps-software/super-soaps-1.png', 'soaps-software/super-soaps-2.png',
       'soaps-software/super-soaps-3.png'),
   /*
     PROJECT: SUPER SOAPS MOBILE APP GAME
@@ -127,7 +127,7 @@ VALUES
   */
   (9, 5, 2, 'Super Soaps Mobile App Game',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '850.00', '2018-02-25', 0, 'soaps-app/super-soaps-1.png', 'soaps-app/super-soaps-2.png',
+      '850.00', '2018-01-19', '2018-02-25', 0, 0, 'soaps-app/super-soaps-1.png', 'soaps-app/super-soaps-2.png',
       'soaps-app/super-soaps-3.png');
 
 INSERT INTO nf_events (eventid, creatorid, eventname, eventtype, eventdescription, eventdate, starttime, endtime, location)
@@ -202,7 +202,7 @@ VALUES
 INSERT INTO nf_comments (commentid, postid, userid, commentcontent, posted, approved)
 VALUES
   (1, 1, 1, 'Hi Janet, you can use Nerd Finder for any development work related to websites, mobile apps, tablet apps and software. This means you can contact Nerds about creating new websites, fixing old ones and adjusting small tweaks! For more information about the service we provide check out our &#39;How it works&#29; page', '2018-01-18 09:51:21', 1),
-  (2, 6, 9, 'Bet they aren&#39;t even updating anything, their customer service is crap!', '2018-02-06 09:15:24', 1),
+  (2, 6, 9, 'Bet they aren&#39;t even updating anything, their customer service is crap!', '2018-02-06 09:15:24', 0),
   (3, 7, 8, 'Pedro, the world is your oyster! If you are passionate about working as a freelancer full-time I recommend looking at articles in .net magazine for inspiration and advice on how to price work effectively per hour.', '2018-01-28 09:31:13', 0);
 
 INSERT INTO nf_messages (messageid, senderid, recieverid, messagecontent, messagesent)
@@ -213,4 +213,4 @@ VALUES
 
 INSERT INTO nf_techissues (issueid, reporterid, issuedescription, issuesent)
 VALUES
-  (1, 1, 'Project inspiration image save location incorrect', '2018-01-18 11:34:12');
+  (1, 1, 'Server storage almost full, contact web development team immediately', '2018-01-18 11:34:12');
