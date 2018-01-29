@@ -6,26 +6,26 @@ VALUES (1, 'admin'), (2, 'nerd'), (3, 'client');
 INSERT INTO nf_specialismtypes (specialismid, specialismdesc)
 VALUES (1, 'Websites'), (2, 'Mobile apps'), (3, 'Tablet apps'), (4, 'Software');
 
-INSERT INTO nf_users (userid, usertypeid, firstname, lastname, email, username, dob, userpassword, passwordhint, premium, profilepic, company, jobtitle, businessarea)
+INSERT INTO nf_users (userid, usertypeid, firstname, lastname, email, username, dob, userpassword, passwordhint, premium, locked, profilepic, company, jobtitle, businessarea)
 VALUES
   /* ADMINS */
-  (1, 1, 'Danny', 'Simpson', 'harryronchetti@gmail.com', 'dsimpson','1993-03-20', '$2y$11$KT5NLgcKtCD0tFsgZ9w0heTTxzikNro6t6wGwn7RI.n1VGzWu0RBu', 'Life in reverse', 1, 'danny-simpson.jpg', 'Nerd Finder', 'Webmaster', 'Technology'),
-  (2, 1, 'Charlotte', 'Jarvis', 'harryronchetti@gmail.com', 'cjavris', '1986-05-05', '$2y$11$80Q5abMr12dPyKtkRDBmvubp968PPWxW10gdIJpQ4y/0sRI1pJ1Qu', 'Life in reverse', 1, 'charlotte-jarvis.jpg', 'Nerd Finder', 'Webmaster', 'Technology'),
+  (1, 1, 'Danny', 'Simpson', 'harryronchetti@gmail.com', 'dsimpson','1993-03-20', '$2y$11$KT5NLgcKtCD0tFsgZ9w0heTTxzikNro6t6wGwn7RI.n1VGzWu0RBu', 'Life in reverse', 1, 0,'danny-simpson.jpg', 'Nerd Finder', 'Webmaster', 'Technology'),
+  (2, 1, 'Charlotte', 'Jarvis', 'harryronchetti@gmail.com', 'cjavris', '1986-05-05', '$2y$11$80Q5abMr12dPyKtkRDBmvubp968PPWxW10gdIJpQ4y/0sRI1pJ1Qu', 'Life in reverse', 1, 0, 'charlotte-jarvis.jpg', 'Nerd Finder', 'Webmaster', 'Technology'),
   /* CLIENTS */
-  (3, 3, 'Janet', 'Anderson', 'dale.clement@northumbria.ac.uk', 'janderson', '1982-07-01', '$2y$11$GodHcQ6tbacfTQIOt.OP7ORDaQlewY2hb50tS89XbVPd2ZV.9N6Wu', 'Favourite cupcake', 0, 'janet-anderson.jpg', 'Cupcake Love', 'Managing Director', 'Hospitality'),
-  (4, 3, 'Debbie' ,'Michaels', 'dale.clement@northumbria.ac.uk', 'dmichaels', '1971-06-21', '$2y$11$3BtSg0MQgP0.yFDfyTT8SOgb5X.eV.SxfR6cpyw5fYrHYZuLW2UnK', 'Personal goal', 1, 'debbie-michaels.jpg', 'Pwizer', 'Senior Partner', 'Pharmaceuticals'),
-  (5, 3, 'Paul', 'Brown', 'dale.clement@northumbria.ac.uk', 'pbrown', '1986-06-21', '$2y$11$BjJ/aHxIzA6iD5d3BS3EAeRQNs1FetFCHqQYIGabVo.GBG5KLq4KG', 'My aim', 0, 'paul-brown.jpg', 'Super Soaps', 'Founder', 'Cosmetics'),
-  (6, 3, 'Angela', 'McCarthy', 'dale.clement@northumbria.ac.uk', 'amccarthy', '1991-01-08', '$2y$11$e7K7r8v39vEARDiv/kj8DeSCSNWNMkCxQjd1bedOpaChnw4mcksGi', 'What I do', 1, 'angela-mccarthy.jpg', 'Pearson Spectre', 'Associate', 'Law');
+  (3, 3, 'Janet', 'Anderson', 'dale.clement@northumbria.ac.uk', 'janderson', '1982-07-01', '$2y$11$GodHcQ6tbacfTQIOt.OP7ORDaQlewY2hb50tS89XbVPd2ZV.9N6Wu', 'Favourite cupcake', 0, 0, 'janet-anderson.jpg', 'Cupcake Love', 'Managing Director', 'Hospitality'),
+  (4, 3, 'Debbie' ,'Michaels', 'dale.clement@northumbria.ac.uk', 'dmichaels', '1971-06-21', '$2y$11$3BtSg0MQgP0.yFDfyTT8SOgb5X.eV.SxfR6cpyw5fYrHYZuLW2UnK', 'Personal goal', 1, 0, 'debbie-michaels.jpg', 'Pwizer', 'Senior Partner', 'Pharmaceuticals'),
+  (5, 3, 'Paul', 'Brown', 'dale.clement@northumbria.ac.uk', 'pbrown', '1986-06-21', '$2y$11$BjJ/aHxIzA6iD5d3BS3EAeRQNs1FetFCHqQYIGabVo.GBG5KLq4KG', 'My aim', 0, 0, 'paul-brown.jpg', 'Super Soaps', 'Founder', 'Cosmetics'),
+  (6, 3, 'Angela', 'McCarthy', 'dale.clement@northumbria.ac.uk', 'amccarthy', '1991-01-08', '$2y$11$e7K7r8v39vEARDiv/kj8DeSCSNWNMkCxQjd1bedOpaChnw4mcksGi', 'What I do', 1, 0, 'angela-mccarthy.jpg', 'Pearson Spectre', 'Associate', 'Law');
 
-INSERT INTO nf_users (userid, usertypeid, firstname, lastname, email, username, dob, userpassword, passwordhint, premium, profilepic, experience, hourlyrate, nerdcv, portfolioimg1, portfolioimg2, portfolioimg3)
+INSERT INTO nf_users (userid, usertypeid, firstname, lastname, email, username, dob, userpassword, passwordhint, premium, locked, profilepic, experience, hourlyrate, nerdcv, portfolioimg1, portfolioimg2, portfolioimg3)
 VALUES
   /* NERDS */
-  (7, 2, 'Pedro', 'Dacantus', 'jack.breakell@northumbria.ac.uk', 'pdacantus', '1997-09-15', '$2y$11$.8Z9nu/d3zSZANHiGCFFT.YlCj52wi1mlMeYbLZ4EnH5EA6KLa06S', 'The truth', 0, 'pedro-dacantus.jpg', 2, '20.00', 'pedro-dacantus-cv.pdf', 'pedro-dacantus/pedro-1.png', 'pedro-dacantus/pedro-2.png', 'pedro-dacantus/pedro-3.png'),
-  (8, 2, 'Tyler', 'Eaton', 'jack.breakell@northumbria.ac.uk', 'teaton', '1988-10-04', '$2y$11$LT/JOAHsaueccJdZxIukl.5gAl.5aQUZywKsWr9n2plc1wna2KtnG', 'My alias', 1, 'tyler-eaton.jpg', 10, '28.00', 'tyler-eaton-cv.pdf', 'tyler-eaton/tyler-1.png', 'tyler-eaton/tyler-2.png', 'tyler-eaton/tyler-3.png'),
-  (9, 2, 'Ben', 'Giroux', 'jack.breakell@northumbria.ac.uk', 'bgiroux', '1979-08-24', '$2y$11$mbWNcIFpd9iWCzR7iIqNyuq71UwkwAMo/hfxEYwGPZ9ep41x/nZgS', 'My passion', 0, 'ben-giroux.jpg', 18, '24.00', 'ben-giroux-cv.pdf', 'ben-giroux/ben-1.png', 'ben-giroux/ben-2.png', 'ben-giroux/ben-3.png'),
-  (10, 2, 'Hanson', 'Buork', 'jack.breakell@northumbria.ac.uk', 'hbuork', '1991-11-29', '$2y$11$zvcaNmkCNvYBDOrl0hLH0ud5Jpcmd5bC6qQ48GinRx.Ecw5qr2u8i', 'Favourite activity', 1, 'hanson-buork.jpg', 5, '32.00', 'hanson-buork-cv.pdf', 'hanson-buork/hanson-1.png', 'hanson-buork/hanson-2.png', 'hanson-buork/hanson-3.png'),
-  (11, 2, 'Penelope', 'Holden', 'jack.breakell@northumbria.ac.uk', 'pholden', '1985-11-29', '$2y$11$ORson47hZsn5Gb73LBAdZ.MpnMDfXf9bkWRDrupNsRrHhT779nhHG', 'Favourite music artist', 1, 'penelope-holden.jpg', 9, '22.00', 'penelope-holden-cv.pdf', 'penelope-holden/penelope-1.png', 'penelope-holden/penelope-2.png', 'penelope-holden/penelope-3.png'),
-  (12, 2, 'Alice', 'Murphy', 'jack.breakell@northumbria.ac.uk', 'amurphy', '1994-11-29', '$2y$11$PcO3w6mlNnlEe7TldBmyJuy3OgcWKcddDPtjhXGyRGA5gLFlzKUqu', 'Floaty water things', 1, 'alice-murphy.jpg', 4, '22.00', 'alice-murphy-cv.pdf', 'alice-murphy/alice-1.png', 'alice-murphy/alice-2.png', 'alice-murphy/alice-3.png');
+  (7, 2, 'Pedro', 'Dacantus', 'jack.breakell@northumbria.ac.uk', 'pdacantus', '1997-09-15', '$2y$11$.8Z9nu/d3zSZANHiGCFFT.YlCj52wi1mlMeYbLZ4EnH5EA6KLa06S', 'The truth', 0, 0, 'pedro-dacantus.jpg', 2, '20.00', 'pedro-dacantus-cv.pdf', 'pedro-dacantus/pedro-1.png', 'pedro-dacantus/pedro-2.png', 'pedro-dacantus/pedro-3.png'),
+  (8, 2, 'Tyler', 'Eaton', 'jack.breakell@northumbria.ac.uk', 'teaton', '1988-10-04', '$2y$11$LT/JOAHsaueccJdZxIukl.5gAl.5aQUZywKsWr9n2plc1wna2KtnG', 'My alias', 1, 0, 'tyler-eaton.jpg', 10, '28.00', 'tyler-eaton-cv.pdf', 'tyler-eaton/tyler-1.png', 'tyler-eaton/tyler-2.png', 'tyler-eaton/tyler-3.png'),
+  (9, 2, 'Ben', 'Giroux', 'jack.breakell@northumbria.ac.uk', 'bgiroux', '1979-08-24', '$2y$11$mbWNcIFpd9iWCzR7iIqNyuq71UwkwAMo/hfxEYwGPZ9ep41x/nZgS', 'My passion', 0, 0, 'ben-giroux.jpg', 18, '24.00', 'ben-giroux-cv.pdf', 'ben-giroux/ben-1.png', 'ben-giroux/ben-2.png', 'ben-giroux/ben-3.png'),
+  (10, 2, 'Hanson', 'Buork', 'jack.breakell@northumbria.ac.uk', 'hbuork', '1991-11-29', '$2y$11$zvcaNmkCNvYBDOrl0hLH0ud5Jpcmd5bC6qQ48GinRx.Ecw5qr2u8i', 'Favourite activity', 1, 0, 'hanson-buork.jpg', 5, '32.00', 'hanson-buork-cv.pdf', 'hanson-buork/hanson-1.png', 'hanson-buork/hanson-2.png', 'hanson-buork/hanson-3.png'),
+  (11, 2, 'Penelope', 'Holden', 'jack.breakell@northumbria.ac.uk', 'pholden', '1985-11-29', '$2y$11$ORson47hZsn5Gb73LBAdZ.MpnMDfXf9bkWRDrupNsRrHhT779nhHG', 'Favourite music artist', 1, 0, 'penelope-holden.jpg', 9, '22.00', 'penelope-holden-cv.pdf', 'penelope-holden/penelope-1.png', 'penelope-holden/penelope-2.png', 'penelope-holden/penelope-3.png'),
+  (12, 2, 'Alice', 'Murphy', 'jack.breakell@northumbria.ac.uk', 'amurphy', '1994-11-29', '$2y$11$PcO3w6mlNnlEe7TldBmyJuy3OgcWKcddDPtjhXGyRGA5gLFlzKUqu', 'Floaty water things', 1, 0, 'alice-murphy.jpg', 4, '22.00', 'alice-murphy-cv.pdf', 'alice-murphy/alice-1.png', 'alice-murphy/alice-2.png', 'alice-murphy/alice-3.png');
 
 INSERT INTO nf_userspecialisms (userspecialismid, userid, specialismid)
 VALUES
@@ -205,11 +205,11 @@ VALUES
   (2, 6, 9, 'Bet they aren&#39;t even updating anything, their customer service is crap!', '2018-02-06 09:15:24', 0),
   (3, 7, 8, 'Pedro, the world is your oyster! If you are passionate about working as a freelancer full-time I recommend looking at articles in .net magazine for inspiration and advice on how to price work effectively per hour.', '2018-01-28 09:31:13', 0);
 
-INSERT INTO nf_messages (messageid, senderid, recieverid, messagecontent, messagesent)
+INSERT INTO nf_messages (messageid, senderid, recieverid, opened, messagecontent, messagesent)
 VALUES
-  (1, 6, 7, 'Hi Pedro, I see you&#39;re a specialist in website development. Would you be interested in working on the Pearson Spectre site?', '2018-01-10 10:51:21'),
-  (2, 7, 6, 'Hi Angela, yes I am very interested! Do you have an style guides or regulations I would need to abide to?', '2018-01-10 10:52:35'),
-  (3, 6, 7, 'Yes, we do actually, I&#39;ll send them over in a minute', '2018-01-10 10:53:26');
+  (1, 6, 7, 1, 'Hi Pedro, I see you&#39;re a specialist in website development. Would you be interested in working on the Pearson Spectre site?', '2018-01-10 10:51:21'),
+  (2, 7, 6, 1, 'Hi Angela, yes I am very interested! Do you have an style guides or regulations I would need to abide to?', '2018-01-10 10:52:35'),
+  (3, 6, 7, 0, 'Yes, we do actually, I&#39;ll send them over in a minute', '2018-01-10 10:53:26');
 
 INSERT INTO nf_techissues (issueid, reporterid, issuedescription, issuesent)
 VALUES

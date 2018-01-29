@@ -12,7 +12,8 @@ CREATE TABLE nf_users
     dob DATE NOT NULL, 
     userpassword VARCHAR(100) NOT NULL, 
     passwordhint VARCHAR(200) NOT NULL, 
-    premium TINYINT(1) NOT NULL, 
+    premium TINYINT(1) NOT NULL,
+    locked TINYINT(1) NOT NULL,
     profilepic VARCHAR(200) NOT NULL, 
     company VARCHAR(100), 
     jobtitle VARCHAR(100), 
@@ -130,7 +131,8 @@ CREATE TABLE nf_messages
 ( 
     messageid INT(10) NOT NULL AUTO_INCREMENT, 
     senderid INT(10) NOT NULL, 
-    recieverid INT(10) NOT NULL, 
+    recieverid INT(10) NOT NULL,
+    opened TINYINT(1) NOT NULL,
     messagecontent VARCHAR(500) NOT NULL, 
     messagesent DATETIME NOT NULL,
     PRIMARY KEY (messageid)
