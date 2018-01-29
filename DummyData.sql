@@ -133,18 +133,18 @@ VALUES
 INSERT INTO nf_events (eventid, creatorid, eventname, eventtype, eventdescription, eventdate, starttime, endtime, location)
 VALUES
   (1, 1, 'Newcastle Networking Meetup', 1,
-   'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>•	Ut enim ad minim veniam, quis nostrud exercitation <br><br>•	laboris nisi ut aliquip ex ea commodo consequa<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+   'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>•	Ut enim ad minim veniam, quis nostrud exercitation<br><br>•	laboris nisi ut aliquip ex ea commodo consequa<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
    '2018-02-15', '18:00:00', '22:00:00',
-   'Northern Design Centre<br>Abbotts Hill<br>Gateshead<br>Newcastle Upon-Tyne<br>NE8 3DF  '),
+   'Northern Design Centre<br>Abbotts Hill<br>Gateshead<br>Newcastle Upon-Tyne<br>NE8 3DF'),
   (2, 1, 'Newcastle Workshop Meetup', 2,
-   'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>•	Ut enim ad minim veniam, quis nostrud exercitation <br><br>•	laboris nisi ut aliquip ex ea commodo consequa<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+   'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>•	Ut enim ad minim veniam, quis nostrud exercitation<br><br>•	laboris nisi ut aliquip ex ea commodo consequa<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
    '2018-02-22', '18:00:00', '21:00:00',
-   'Northern Design Centre<br>Abbotts Hill<br>Gateshead<br>Newcastle Upon-Tyne<br>NE8 3DF  '),
+   'Northern Design Centre<br>Abbotts Hill<br>Gateshead<br>Newcastle Upon-Tyne<br>NE8 3DF'),
   (3, 2, 'Durham Workshop Meetup', 2,
-   'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>•	Ut enim ad minim veniam, quis nostrud exercitation <br><br>•	laboris nisi ut aliquip ex ea commodo consequa<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+   'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>•	Ut enim ad minim veniam, quis nostrud exercitation<br><br>•	laboris nisi ut aliquip ex ea commodo consequa<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
    '2018-02-25', '18:00:00', '21:00:00', 'Unit 8<br>Parsons Court<br>Welbury Way<br>Newton Aycliffe<br>DL5 6ZE'),
   (4, 2, 'Durham Networking Meetup', 1,
-   'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>•	Ut enim ad minim veniam, quis nostrud exercitation <br><br>•	laboris nisi ut aliquip ex ea commodo consequa<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+   'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>•	Ut enim ad minim veniam, quis nostrud exercitation<br><br>•	laboris nisi ut aliquip ex ea commodo consequa<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
    '2018-03-02', '18:00:00', '22:00:00', 'Unit 8<br>Parsons Court<br>Welbury Way<br>Newton Aycliffe<br>DL5 6ZE');
 
 INSERT INTO nf_eventattendance (attendanceid, userid, eventid)
