@@ -2,6 +2,7 @@
 Username        |   Password         |  User Type          |
 ------------------------------------------------------------
 dsimpson        |   Nospmis1         |  Admin              |
+admin           |   Nerd_finder      |  Admin              |
 cjavris         |   Sivraj1          |  Admin              |
 
 janderson       |   Redvelvet1       |  Client             |

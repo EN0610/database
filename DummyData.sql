@@ -11,6 +11,7 @@ VALUES
   /* ADMINS */
   (1, 1, 'Danny', 'Simpson', 'harryronchetti@gmail.com', 'dsimpson','1993-03-20', '$2y$11$KT5NLgcKtCD0tFsgZ9w0heTTxzikNro6t6wGwn7RI.n1VGzWu0RBu', 'Life in reverse', 1, 0,'danny-simpson.jpg', 'Nerd Finder', 'Webmaster', 'Technology'),
   (2, 1, 'Charlotte', 'Jarvis', 'harryronchetti@gmail.com', 'cjavris', '1986-05-05', '$2y$11$80Q5abMr12dPyKtkRDBmvubp968PPWxW10gdIJpQ4y/0sRI1pJ1Qu', 'Life in reverse', 1, 0, 'charlotte-jarvis.jpg', 'Nerd Finder', 'Webmaster', 'Technology'),
+  (13, 1, 'Nerd', 'Finder', 'harryronchetti@gmail.com', 'admin', '2018-01-01', '$2y$11$p0J.ym/DNqeGL7adpR8cguMQfn4lUjGXHQXSMIX/J.sxdpE3Zh0Ku', 'Me', 1, 0, 'admin.jpg', 'Nerd Finder', 'Admin', 'Technology'),
   /* CLIENTS */
   (3, 3, 'Janet', 'Anderson', 'dale.clement@northumbria.ac.uk', 'janderson', '1982-07-01', '$2y$11$GodHcQ6tbacfTQIOt.OP7ORDaQlewY2hb50tS89XbVPd2ZV.9N6Wu', 'Favourite cupcake', 0, 0, 'janet-anderson.jpg', 'Cupcake Love', 'Managing Director', 'Hospitality'),
   (4, 3, 'Debbie' ,'Michaels', 'dale.clement@northumbria.ac.uk', 'dmichaels', '1971-06-21', '$2y$11$3BtSg0MQgP0.yFDfyTT8SOgb5X.eV.SxfR6cpyw5fYrHYZuLW2UnK', 'Personal goal', 1, 0, 'debbie-michaels.jpg', 'Pwizer', 'Senior Partner', 'Pharmaceuticals'),
