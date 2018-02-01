@@ -17,7 +17,7 @@ VALUES
   (5, 3, 'Paul', 'Brown', 'dale.clement@northumbria.ac.uk', 'pbrown', '1986-06-21', '$2y$11$BjJ/aHxIzA6iD5d3BS3EAeRQNs1FetFCHqQYIGabVo.GBG5KLq4KG', 'My aim', 0, 0, 'paul-brown.jpg', 'Super Soaps', 'Founder', 'Cosmetics'),
   (6, 3, 'Angela', 'McCarthy', 'dale.clement@northumbria.ac.uk', 'amccarthy', '1991-01-08', '$2y$11$e7K7r8v39vEARDiv/kj8DeSCSNWNMkCxQjd1bedOpaChnw4mcksGi', 'What I do', 1, 0, 'angela-mccarthy.jpg', 'Pearson Spectre', 'Associate', 'Law');
 
-INSERT INTO nf_users (userid, usertypeid, firstname, lastname, email, username, dob, userpassword, passwordhint, premium, locked, profilepic, experience, hourlyrate, nerdcv, portfolioimg1, portfolioimg2, portfolioimg3)
+INSERT INTO nf_users (userid, usertypeid, firstname, lastname, email, username, dob, userpassword, passwordhint, premium, locked, profilepic, experience, hourlyrate, nerdcv, portfolioimg1, portfolioimg2, portfolioimg3, userspecialismid)
 VALUES
   /* NERDS */
   (7, 2, 'Pedro', 'Dacantus', 'jack.breakell@northumbria.ac.uk', 'pdacantus', '1997-09-15', '$2y$11$.8Z9nu/d3zSZANHiGCFFT.YlCj52wi1mlMeYbLZ4EnH5EA6KLa06S', 'The truth', 0, 0, 'pedro-dacantus.jpg', 2, '20.00', 'pedro-dacantus-cv.pdf', 'pedro-dacantus/pedro-1.png', 'pedro-dacantus/pedro-2.png', 'pedro-dacantus/pedro-3.png'),
