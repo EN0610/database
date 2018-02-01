@@ -17,30 +17,15 @@ VALUES
   (5, 3, 'Paul', 'Brown', 'dale.clement@northumbria.ac.uk', 'pbrown', '1986-06-21', '$2y$11$BjJ/aHxIzA6iD5d3BS3EAeRQNs1FetFCHqQYIGabVo.GBG5KLq4KG', 'My aim', 0, 0, 'paul-brown.jpg', 'Super Soaps', 'Founder', 'Cosmetics'),
   (6, 3, 'Angela', 'McCarthy', 'dale.clement@northumbria.ac.uk', 'amccarthy', '1991-01-08', '$2y$11$e7K7r8v39vEARDiv/kj8DeSCSNWNMkCxQjd1bedOpaChnw4mcksGi', 'What I do', 1, 0, 'angela-mccarthy.jpg', 'Pearson Spectre', 'Associate', 'Law');
 
-INSERT INTO nf_users (userid, usertypeid, firstname, lastname, email, username, dob, userpassword, passwordhint, premium, locked, profilepic, experience, hourlyrate, nerdcv, portfolioimg1, portfolioimg2, portfolioimg3, userspecialismid)
+INSERT INTO nf_users (userid, usertypeid, firstname, lastname, email, username, dob, userpassword, passwordhint, premium, locked, profilepic, experience, hourlyrate, nerdcv, portfolioimg1, portfolioimg2, portfolioimg3, specialismid)
 VALUES
   /* NERDS */
-  (7, 2, 'Pedro', 'Dacantus', 'jack.breakell@northumbria.ac.uk', 'pdacantus', '1997-09-15', '$2y$11$.8Z9nu/d3zSZANHiGCFFT.YlCj52wi1mlMeYbLZ4EnH5EA6KLa06S', 'The truth', 0, 0, 'pedro-dacantus.jpg', 2, '20.00', 'pedro-dacantus-cv.pdf', 'pedro-dacantus/pedro-1.png', 'pedro-dacantus/pedro-2.png', 'pedro-dacantus/pedro-3.png'),
-  (8, 2, 'Tyler', 'Eaton', 'jack.breakell@northumbria.ac.uk', 'teaton', '1988-10-04', '$2y$11$LT/JOAHsaueccJdZxIukl.5gAl.5aQUZywKsWr9n2plc1wna2KtnG', 'My alias', 1, 0, 'tyler-eaton.jpg', 10, '28.00', 'tyler-eaton-cv.pdf', 'tyler-eaton/tyler-1.png', 'tyler-eaton/tyler-2.png', 'tyler-eaton/tyler-3.png'),
-  (9, 2, 'Ben', 'Giroux', 'jack.breakell@northumbria.ac.uk', 'bgiroux', '1979-08-24', '$2y$11$mbWNcIFpd9iWCzR7iIqNyuq71UwkwAMo/hfxEYwGPZ9ep41x/nZgS', 'My passion', 0, 0, 'ben-giroux.jpg', 18, '24.00', 'ben-giroux-cv.pdf', 'ben-giroux/ben-1.png', 'ben-giroux/ben-2.png', 'ben-giroux/ben-3.png'),
-  (10, 2, 'Hanson', 'Buork', 'jack.breakell@northumbria.ac.uk', 'hbuork', '1991-11-29', '$2y$11$zvcaNmkCNvYBDOrl0hLH0ud5Jpcmd5bC6qQ48GinRx.Ecw5qr2u8i', 'Favourite activity', 1, 0, 'hanson-buork.jpg', 5, '32.00', 'hanson-buork-cv.pdf', 'hanson-buork/hanson-1.png', 'hanson-buork/hanson-2.png', 'hanson-buork/hanson-3.png'),
-  (11, 2, 'Penelope', 'Holden', 'jack.breakell@northumbria.ac.uk', 'pholden', '1985-11-29', '$2y$11$ORson47hZsn5Gb73LBAdZ.MpnMDfXf9bkWRDrupNsRrHhT779nhHG', 'Favourite music artist', 1, 0, 'penelope-holden.jpg', 9, '22.00', 'penelope-holden-cv.pdf', 'penelope-holden/penelope-1.png', 'penelope-holden/penelope-2.png', 'penelope-holden/penelope-3.png'),
-  (12, 2, 'Alice', 'Murphy', 'jack.breakell@northumbria.ac.uk', 'amurphy', '1994-11-29', '$2y$11$PcO3w6mlNnlEe7TldBmyJuy3OgcWKcddDPtjhXGyRGA5gLFlzKUqu', 'Floaty water things', 1, 0, 'alice-murphy.jpg', 4, '22.00', 'alice-murphy-cv.pdf', 'alice-murphy/alice-1.png', 'alice-murphy/alice-2.png', 'alice-murphy/alice-3.png');
-
-INSERT INTO nf_userspecialisms (userspecialismid, userid, specialismid)
-VALUES
-  /* PEDRO */
-  (1, 7, 1),
-  /* TYLER */
-  (2, 8, 2),
-  /* BEN */
-  (4, 9, 3),
-  /* HANSON */
-  (6, 10, 4),
-  /* PENELOPE */
-  (7, 11, 1),
-  /* ALICE */
-  (9, 12, 2);
+  (7, 2, 'Pedro', 'Dacantus', 'jack.breakell@northumbria.ac.uk', 'pdacantus', '1997-09-15', '$2y$11$.8Z9nu/d3zSZANHiGCFFT.YlCj52wi1mlMeYbLZ4EnH5EA6KLa06S', 'The truth', 0, 0, 'pedro-dacantus.jpg', 2, '20.00', 'pedro-dacantus-cv.pdf', 'pedro-dacantus/pedro-1.png', 'pedro-dacantus/pedro-2.png', 'pedro-dacantus/pedro-3.png', 1),
+  (8, 2, 'Tyler', 'Eaton', 'jack.breakell@northumbria.ac.uk', 'teaton', '1988-10-04', '$2y$11$LT/JOAHsaueccJdZxIukl.5gAl.5aQUZywKsWr9n2plc1wna2KtnG', 'My alias', 1, 0, 'tyler-eaton.jpg', 10, '28.00', 'tyler-eaton-cv.pdf', 'tyler-eaton/tyler-1.png', 'tyler-eaton/tyler-2.png', 'tyler-eaton/tyler-3.png', 2),
+  (9, 2, 'Ben', 'Giroux', 'jack.breakell@northumbria.ac.uk', 'bgiroux', '1979-08-24', '$2y$11$mbWNcIFpd9iWCzR7iIqNyuq71UwkwAMo/hfxEYwGPZ9ep41x/nZgS', 'My passion', 0, 0, 'ben-giroux.jpg', 18, '24.00', 'ben-giroux-cv.pdf', 'ben-giroux/ben-1.png', 'ben-giroux/ben-2.png', 'ben-giroux/ben-3.png', 3),
+  (10, 2, 'Hanson', 'Buork', 'jack.breakell@northumbria.ac.uk', 'hbuork', '1991-11-29', '$2y$11$zvcaNmkCNvYBDOrl0hLH0ud5Jpcmd5bC6qQ48GinRx.Ecw5qr2u8i', 'Favourite activity', 1, 0, 'hanson-buork.jpg', 5, '32.00', 'hanson-buork-cv.pdf', 'hanson-buork/hanson-1.png', 'hanson-buork/hanson-2.png', 'hanson-buork/hanson-3.png', 4),
+  (11, 2, 'Penelope', 'Holden', 'jack.breakell@northumbria.ac.uk', 'pholden', '1985-11-29', '$2y$11$ORson47hZsn5Gb73LBAdZ.MpnMDfXf9bkWRDrupNsRrHhT779nhHG', 'Favourite music artist', 1, 0, 'penelope-holden.jpg', 9, '22.00', 'penelope-holden-cv.pdf', 'penelope-holden/penelope-1.png', 'penelope-holden/penelope-2.png', 'penelope-holden/penelope-3.png', 1),
+  (12, 2, 'Alice', 'Murphy', 'jack.breakell@northumbria.ac.uk', 'amurphy', '1994-11-29', '$2y$11$PcO3w6mlNnlEe7TldBmyJuy3OgcWKcddDPtjhXGyRGA5gLFlzKUqu', 'Floaty water things', 1, 0, 'alice-murphy.jpg', 4, '22.00', 'alice-murphy-cv.pdf', 'alice-murphy/alice-1.png', 'alice-murphy/alice-2.png', 'alice-murphy/alice-3.png', 2);
 
 /*****    PROJECT TABLES    *****/
 

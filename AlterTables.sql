@@ -2,10 +2,6 @@
 
 ALTER TABLE nf_users
 ADD FOREIGN KEY (usertypeid) REFERENCES nf_usertypes(usertypeid) ON DELETE CASCADE,
-ADD FOREIGN KEY (userspecialismid) REFERENCES nf_userspecialisms(userspecialismid) ON DELETE CASCADE;
-
-ALTER TABLE nf_userspecialisms
-ADD FOREIGN KEY (userid) REFERENCES nf_users(userid) ON DELETE CASCADE,
 ADD FOREIGN KEY (specialismid) REFERENCES nf_specialismtypes(specialismid) ON DELETE CASCADE;
 
 /*    PROJECT TABLES    */

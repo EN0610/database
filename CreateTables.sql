@@ -1,5 +1,11 @@
 
 /*    USER TABLES    */
+CREATE TABLE nf_specialismtypes
+(
+    specialismid INT(10) NOT NULL AUTO_INCREMENT,
+    specialismdesc VARCHAR(100) NOT NULL,
+    PRIMARY KEY (specialismid)
+) Engine = InnoDB;
 
 CREATE TABLE nf_users
 (
@@ -25,7 +31,7 @@ CREATE TABLE nf_users
     portfolioimg1 VARCHAR(200),
     portfolioimg2 VARCHAR(200),
     portfolioimg3 VARCHAR(200),
-    userspecialismid INT(10),
+    specialismid INT(10),
     PRIMARY KEY (userid),
     CHECK (dob>=18),
     UNIQUE (username)
@@ -36,21 +42,6 @@ CREATE TABLE nf_usertypes
     usertypeid INT(10) NOT NULL AUTO_INCREMENT,
     usertypedesc VARCHAR(100) NOT NULL,
     PRIMARY KEY (usertypeid)
-) Engine = InnoDB;
-
-CREATE TABLE nf_userspecialisms
-(
-    userspecialismid INT(10) NOT NULL AUTO_INCREMENT,
-    userid INT(10) NOT NULL,
-    specialismid INT(10) NOT NULL,
-    PRIMARY KEY (userspecialismid)
-) Engine = InnoDB;
-
-CREATE TABLE nf_specialismtypes
-(
-    specialismid INT(10) NOT NULL AUTO_INCREMENT,
-    specialismdesc VARCHAR(100) NOT NULL,
-    PRIMARY KEY (specialismid)
 ) Engine = InnoDB;
 
 /*    PROJECT TABLES    */
