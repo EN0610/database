@@ -56,7 +56,7 @@ VALUES
   */
   (1, 4, 8, 2, 'Pwizer Sales Tracking Mobile App',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '2000.00', '2017-12-30', '2018-04-29', 1, 0, 'pwizer-app/pwizer-1.png', 'pwizer-app/pwizer-2.jpg', 'pwizer-app/pwizer-3.png'),
+      '2000.00', '2017-12-30', '2018-04-29', 1, 0, 'pwizer-app/pwizer-1.png', 'pwizer-app/pwizer-2.png', 'pwizer-app/pwizer-3.png'),
   /*
     PROJECT: SUPER SOAPS WEBSITE
     CLIENT: PAUL BROWN
@@ -65,7 +65,7 @@ VALUES
   */
   (2, 5, 7, 1, 'Super Soaps Website',
       'Project description dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in',
-      '450.00', '2017-12-30', '2018-03-10', 1, 0, 'soaps-website/super-soaps-1.png', 'soaps-website/super-soaps-2.jpg',
+      '450.00', '2017-12-30', '2018-03-10', 1, 0, 'soaps-website/super-soaps-1.png', 'soaps-website/super-soaps-1.jpg',
    'soaps-website/super-soaps-3.png'),
   /*
     PROJECT: CUPCAKE LOVE LOYALTY MOBILE APP
@@ -208,7 +208,7 @@ VALUES
 INSERT INTO nf_messages (messageid, senderid, recieverid, opened, messagecontent, messagesent)
 VALUES
   (1, 6, 7, 1, 'Hi Pedro, I see you&#39;re a specialist in website development. Would you be interested in working on the Pearson Spectre site?', '2018-01-10 10:51:21'),
-  (2, 7, 6, 1, 'Hi Angela, yes I am very interested! Do you have any style guides or regulations I would need to abide to?', '2018-01-10 10:52:35'),
+  (2, 7, 6, 1, 'Hi Angela, yes I am very interested! Do you have an style guides or regulations I would need to abide to?', '2018-01-10 10:52:35'),
   (3, 6, 7, 0, 'Yes, we do actually, I&#39;ll send them over in a minute', '2018-01-10 10:53:26');
 
 INSERT INTO nf_techissues (issueid, reporterid, issuedescription, issuesent)
